@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>My First CI/CD Deployment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anvesh CI/CD Demo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff512f, #dd2476, #1e3c72);
+      background-size: 300% 300%;
+      animation: gradientMove 10s ease infinite;
+      color: white;
+      overflow: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 35px;
+      margin-bottom: 20px;
+      color: #ffe082;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+
+    .badge {
+      margin-top: 30px;
+      display: inline-block;
+      background: #00e676;
+      color: black;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Hello from GitHub Actions 🚀</h1>
+
+  <div class="container">
+
+    <h1>🚀 Welcome Anvesh</h1>
+
+    <h2>CI/CD Pipeline Successfully Working</h2>
+
+    <p>
+      This website was automatically deployed using:
+      <br><br>
+      GitHub Actions + AWS EC2 + Apache
+    </p>
+
+    <div class="badge">
+      Auto Deployment Active ✅
+    </div>
+
+    <div class="footer">
+      DevOps Journey Started 🔥
+    </div>
+
+  </div>
+
 </body>
 
 </html>
